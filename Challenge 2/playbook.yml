@@ -1,0 +1,12 @@
+---
+  - name: Playbook
+    hosts: prod
+    become: yes
+    become_user: root
+    tasks:
+      - name: ensure nginix is at the latest version
+        apt:
+          name: nginx
+          state: latest
+    roles:
+        - dev-sec.os-hardening

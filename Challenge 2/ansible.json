@@ -1,0 +1,9 @@
+
+PLAY [Playbook] ****************************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [prod-yQJa8AqM]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3"}, "failed": true, "module_stderr": "Shared connection to prod-yqja8aqm closed.\r\n", "module_stdout": "/bin/sh: 1: sudo: not found\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 127}}, "msg": "The following modules failed to execute: setup\n"}
+
+PLAY RECAP *********************************************************************
+prod-yQJa8AqM              : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
